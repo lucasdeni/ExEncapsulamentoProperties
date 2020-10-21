@@ -22,34 +22,40 @@ namespace EncapsulamentoProperties
             _quantidade = quantidade;
         }
 
-        //GET e SET
-        public string GetNome()
+        // Utiização de properties
+        public string Nome
         {
-            return _nome;
-        }
-
-        //Entrada de dados
-        public void SetNome(string nome)
-        {
-            if(nome != null && nome.Length > 1)
+            get 
             {
-                _nome = nome;
+                return _nome; 
+            }
+            set 
+            { 
+                if (value != null && value.Length > 1)
+                {
+                    _nome = value;
+                }  
             }
         }
-        // Retorno dos valores Preço do produto e Quantidade do produto 
-        public double GetPreço()
+        public double Preço
         {
-            return _preço;
+            get
+            {
+                return _preço;
+            }
         }
-        public double GetQuantidade()
+        public int Quantidade
         {
-            return _quantidade;
+            get
+            {
+                return _quantidade;
+            }
         }
         public double ValorTotalEmEstoque() //Vai definir o valor total do estoque
         {
             return _preço * _quantidade; 
         }
-        public void AdicionarProduto(int quantidade) //Vai adicionar produtos no estoque
+        public void AdicionarProdutos(int quantidade) //Vai adicionar produtos no estoque
         { 
             _quantidade += quantidade;
         }
