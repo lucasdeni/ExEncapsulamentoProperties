@@ -63,6 +63,7 @@ namespace EncapsulamentoProperties
         {
             _quantidade -= quantidade; 
         }
+        //Declaração da String
         public override string ToString()
         {
             return _nome + ", R$ " + _preço.ToString("F2", CultureInfo.InvariantCulture) + ", " + _quantidade + " unidades, Total: R$ " + ValorTotalEmEstoque().ToString("F2", CultureInfo.InvariantCulture);

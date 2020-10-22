@@ -12,8 +12,8 @@ namespace EncapsulamentoProperties
             //Inprimir as saídas
             Console.WriteLine("Nome do Produto: " + p.Nome);
             Console.WriteLine("Preço individual do Produto: R$" + p.Preço.ToString("F2", CultureInfo.InvariantCulture));
-            Console.WriteLine("Valor Total do Estoque: R$" + p.ValorTotalEmEstoque().ToString("F2", CultureInfo.InvariantCulture));
             Console.WriteLine("Quantidade do Produto: " + p.Quantidade);
+            Console.WriteLine("Valor Total do Estoque: R$" + p.ValorTotalEmEstoque().ToString("F2", CultureInfo.InvariantCulture));
 
             Console.Write("Digite o número de produtos a serem adicionados no estoque: ");
             int qte = int.Parse(Console.ReadLine());
@@ -21,8 +21,8 @@ namespace EncapsulamentoProperties
 
             //Dados atualizados pós adição
             Console.WriteLine("Nome do Produto: " + p.Nome);
-            Console.WriteLine("Valor Total do Estoque: R$" + p.ValorTotalEmEstoque().ToString("F2", CultureInfo.InvariantCulture));
             Console.WriteLine("Quantidade do Produto: " + p.Quantidade);
+            Console.WriteLine("Valor Total do Estoque: R$" + p.ValorTotalEmEstoque().ToString("F2", CultureInfo.InvariantCulture));
 
             Console.Write("Digite o número de produtos a serem removidos no estoque: ");
             qte = int.Parse(Console.ReadLine());
@@ -30,8 +30,8 @@ namespace EncapsulamentoProperties
 
             //Dados atualizados pós remoção
             Console.WriteLine("Nome do Produto: " + p.Nome);
-            Console.WriteLine("Valor Total do Estoque: R$" + p.ValorTotalEmEstoque().ToString("F2", CultureInfo.InvariantCulture));
             Console.WriteLine("Quantidade do Produto: " + p.Quantidade);
+            Console.WriteLine("Valor Total do Estoque: R$" + p.ValorTotalEmEstoque().ToString("F2", CultureInfo.InvariantCulture));
 
             Console.ReadKey();
         }
